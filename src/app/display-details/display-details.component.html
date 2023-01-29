@@ -1,0 +1,5 @@
+<button class="btn btn-primary" (click)="toggleDetails()">Display details</button>
+<div *ngIf="displayDetails">
+  <p>Secret Password is: {{secretPassword}}</p>
+  <p *ngFor="let item of logList" [ngStyle]="{backgroundColor: 'red'}">{{item}}</p>
+</div>
